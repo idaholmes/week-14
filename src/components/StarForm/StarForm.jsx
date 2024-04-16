@@ -4,11 +4,13 @@ export const StarForm = ({ onStarChange }) => {
   const [rating, setRating] = useState(0);
 
   const handleRatingChange = (event) => {
+    // convert rating value to a number
     setRating(parseInt(event.target.value));
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    // pass rating up to parent event handler
     onStarChange(rating);
   };
 
