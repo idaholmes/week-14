@@ -1,0 +1,11 @@
+.movieWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 85vw;
+  margin-inline: auto;
+
+  @media screen and (max-width: 600px) {
+    display: block;
+  }
+}
